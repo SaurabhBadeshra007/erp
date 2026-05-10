@@ -197,6 +197,6 @@ app.post('/create',upload.single('image'), (req, res) => {
     } )
 })
 
-app.listen(8081, ()=> {
+app.listen(process.env.PORT || 8081, ()=> {
     console.log("Running");
 })
